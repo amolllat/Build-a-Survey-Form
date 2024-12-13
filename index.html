@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback. Please fill out the form below.</p>
+
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" placeholder="Enter your age" min="1" max="120" required>
+
+        <label for="dropdown">What is your favorite programming language?</label>
+        <select id="dropdown" required>
+            <option value="">Select an option</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+
+        <label>How often do you code?</label>
+        <div class="options">
+            <input type="radio" id="daily" name="frequency" value="daily" required>
+            <label for="daily">Daily</label>
+        </div>
+        <div class="options">
+            <input type="radio" id="weekly" name="frequency" value="weekly">
+            <label for="weekly">Weekly</label>
+        </div>
+        <div class="options">
+            <input type="radio" id="monthly" name="frequency" value="monthly">
+            <label for="monthly">Monthly</label>
+        </div>
+
+        <label>What technologies are you interested in? (Select all that apply)</label>
+        <div class="options">
+            <input type="checkbox" id="frontend" value="frontend">
+            <label for="frontend">Frontend Development</label>
+        </div>
+        <div class="options">
+            <input type="checkbox" id="backend" value="backend">
+            <label for="backend">Backend Development</label>
+        </div>
+        <div class="options">
+            <input type="checkbox" id="ai" value="ai">
+            <label for="ai">Artificial Intelligence</label>
+        </div>
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
